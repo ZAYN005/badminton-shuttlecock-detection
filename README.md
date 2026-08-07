@@ -2,7 +2,7 @@
 
 Real-time shuttlecock detection in badminton match footage using a fine-tuned YOLOv8 model. Achieves 76.4% mAP@50 on a diverse test set spanning professional broadcasts (BWF World Tour) and amateur match recordings.
 
-![Sample Detection](samples/sample1.png)
+![Sample Detection](sample_amateur_indonesia.jfif)
 
 ## 🎯 Motivation
 
@@ -26,21 +26,16 @@ As a competitive badminton player (Men's Singles Champion, Belt and Road Interna
 | **Model Size** | 3.0M parameters, 8.1 GFLOPs |
 
 ### Training Curves
-![Training Results](results/results.png)
+![Training Results](results.png)
 
 ### Confusion Matrix
-![Confusion Matrix](results/confusion_matrix.png)
-
-### Sample Validation Predictions
-![Validation Predictions](results/val_batch0_pred.jpg)
+![Confusion Matrix](confusion_matrix.png)
 
 ## 🖼️ Real-World Test Predictions
 
-The model generalizes across broadcast footage AND amateur recordings without additional fine-tuning:
+The model generalizes across amateur recordings and professional broadcasts without additional fine-tuning:
 
-| Professional Match (BWF Jakarta) | Amateur Match (Indonesian Club) |
-|:---:|:---:|
-| ![](samples/pro_match.png) | ![](samples/amateur_match.png) |
+![Amateur Match Detection](sample_amateur_indonesia.jfif)
 
 ## 🛠️ Tech Stack
 
@@ -56,14 +51,14 @@ The model generalizes across broadcast footage AND amateur recordings without ad
 ```bash
 git clone https://github.com/ZAYN005/badminton-shuttlecock-detection.git
 cd badminton-shuttlecock-detection
-pip install -r requirements.txt
+pip install ultralytics
 ```
 
 ### Run inference on an image
 ```python
 from ultralytics import YOLO
 
-model = YOLO('weights/best.pt')
+model = YOLO('best.pt')
 results = model.predict('your_image.jpg', conf=0.25, save=True)
 ```
 
