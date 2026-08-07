@@ -1,0 +1,12 @@
+names:
+- Shuttlecock
+nc: 1
+roboflow:
+  license: Public Domain
+  project: badminton-shuttlecock-dv7zr
+  url: https://universe.roboflow.com/badyfriends/badminton-shuttlecock-dv7zr/dataset/5
+  version: 5
+  workspace: badyfriends
+test: ../test/images
+train: ../train/images
+val: ../valid/images
