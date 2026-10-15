@@ -113,7 +113,7 @@ Dataset sourced from [Roboflow Universe](https://universe.roboflow.com/badyfrien
 
 **Zain Ali**
 - Computer Science undergraduate, Nanjing Tech University (Class of 2027)
-- Competitive badminton player, provincial champion (Jiangsu, 2024)
+- Competitive badminton player, provincial champion (Jiangsu, 2026)
 - 📧 zain01chaudhary@gmail.com
 - 🔗 [GitHub](https://github.com/ZAYN005)
 
